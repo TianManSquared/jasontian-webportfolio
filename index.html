@@ -1,0 +1,736 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!-- title, meta, links -->
+	<title>Jason Tian | Product Design</title>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Tian Jason Tian" />
+	<link rel="SHORTCUT ICON" href="favicon.ico"/>
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="lightbox.css" type="text/css"/>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+	<!-- main script -->
+	<script type="text/javascript" src="script.js"></script>
+	<!-- masonry -->
+	<script src="jquery.masonry.min.js"></script>
+	<script src="jquery-ui-1.8.18.custom.min.js"></script>
+	<!-- lightbox -->
+	<script src="lightbox.js"> </script>
+	<script src="jquery.smooth-scroll.min.js"></script>
+</head>
+
+<body>
+
+<div id="outer_wrapper">
+<div id="inner_wrapper">
+
+	<!-- page header & navigation -->
+	<div id="header">
+		<div id="header_title">Tian Jason Tian </div>
+		<div id="header_tabs">
+			<div id="home" class="option maintab"> Home</div>
+			<div id="about" class="option maintab"> About Me</div>
+			<div id="radius" class="option maintab"> Radius Portfolio</div>
+			<div id="misc" class="option maintab"> Other Work</div>
+			<div id="design" class="option maintab">Design</div>
+			<div id="contact" class="option maintab"> Contact</div>
+			<div id="newportfolio" class="option maintab">New Portfolio</div>
+		</div>
+	</div>
+
+	<!-- personal background & skills -->
+	<div id="about_wrapper" class="maintab_wrapper">
+
+		<div id="about_education" class="about_panel">
+			<div id="about_education_cover" class="about_cover" data-aboutmarker="education"></div>
+			<div id="about_education_title" class="about_title" data-aboutmarker="education">Education</div>
+			<div id="about_education_content" class="about_content">
+				<div id="about_education_text">I graduated Duke University in May 2011. 
+				<p>I hold a B.S.E. in Electrical and Computer Engineering and Visual Arts.
+				<p>...yeah, it's an eclectic combo
+				</div>
+			</div>
+		</div>
+
+		<div id="about_background" class="about_panel">
+			<div id="about_background_cover" class="about_cover" data-aboutmarker="background"></div>
+			<div id="about_background_title" class="about_title" data-aboutmarker="background">Background</div>
+			<div id="about_background_content" class="about_content">
+				<div id="about_background_text">
+					Hey! I am Jason, a designer, front-end developer, and entrepreneur experienced in building software products, intuitive user interfaces, and cohesive company branding. 
+					<p>I am the co-founder, CEO, and lead designer of <font color="#590900">Radius</font>, a new location platform startup. We launched our web and mobile applications in January of this year.
+					</div>
+			</div>
+		</div>
+
+		<div id="about_skills" class="about_panel">
+			<div id="about_skills_cover" class="about_cover" data-aboutmarker="skills"></div>
+			<div id="about_skills_title" class="about_title" data-aboutmarker="skills">Skills</div>
+			<div id="about_skills_content" class="about_content">
+				<div id="about_skills_text">I am proficient across a wide range of software and programming languages/frameworks.</div>
+				<div id="about_skills_top">
+					<div data-name="Adobe Photoshop" id="photoshop" class="about_overview_skills_softwarebkgd">
+						<div id="photoshop" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Adobe Illustrator" id="illustrator" class="about_overview_skills_softwarebkgd">
+						<div id="illustrator" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Adobe InDesign" id="inDesign" class="about_overview_skills_softwarebkgd">
+						<div id="inDesign" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Adobe After Effects" id="afterEffects" class="about_overview_skills_softwarebkgd">
+						<div id="afterEffects" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Adobe Acrobat" id="acrobat" class="about_overview_skills_softwarebkgd">
+						<div id="acrobat" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Autodesk Maya" id="maya" class="about_overview_skills_softwarebkgd">
+						<div id="maya" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Pixologic ZBrush" id="zbrush" class="about_overview_skills_softwarebkgd">
+						<div id="zbrush" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="SolidWorks" id="solidworks" class="about_overview_skills_softwarebkgd">
+						<div id="solidworks" class="about_overview_skills_softwareicon"></div>
+					</div>
+				</div>
+
+				<div id="about_skills_softwarename"></div>
+
+				<div id="about_skills_bottom">
+					<div data-name="HTML" id="html" class="about_overview_skills_softwarebkgd">
+						<div id="html" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="CSS" id="css" class="about_overview_skills_softwarebkgd">
+						<div id="css" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="JavaScript" id="javaScript" class="about_overview_skills_softwarebkgd">
+						<div id="javaScript" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="CoffeeScript" id="coffeeScript" class="about_overview_skills_softwarebkgd">
+						<div id="coffeeScript" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="jQuery" id="jQuery" class="about_overview_skills_softwarebkgd">
+						<div id="jQuery" class="about_overview_skills_softwareicon"></div>
+					</div>
+					<div data-name="Backbone.js" id="backbone.js" class="about_overview_skills_softwarebkgd">
+						<div id="backbone" class="about_overview_skills_softwareicon"></div>
+					</div>
+				</div>
+				<div id="about_skills_text">I specialize in <font color="#590900">Application Design</font> and <font color="#590900">Product Management</font>. My other skills include graphic design, concept drafting, front-end coding, digital painting, user experience planning, technical writing, and presenting in front of audiences.</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- radius portfolio -->
+	<div id="radius_wrapper" class="maintab_wrapper">
+
+		<div id="overview" class="radius_slide">
+			<div id="radius_banner"></div>
+			<div id="radius_slide_overview_text">My startup Radius launched in January on the <a href="http://radius-app.com" target="_blank">web</a> and <a href="http://www.radius-app.com/download/iphone" target="_blank">iOS</a>. We are a new location-based platform that allows people to broadcast their favorite locations and virtually visit top areas around the world. <p> As lead designer, I was responsible for the shaping of the Radius concept, its fledgling corporate branding, its application UI on desktop and mobile, and its marketing materials - in essence, the entire software product lifecycle. Here are some insights into the product and my personal workflow.
+			</div>
+		</div>
+
+		<div id="branding" class="radius_slide">
+			<div id="radius_slide_branding_title">Consistent look and feel</div>
+			<div id="radius_slide_branding_text"> Startups need a clear and memorable brand - there are too many competitors in Silicon Valley to pointlessly lose ground by looking generic to a potential investor, or by confusing your intended audience - a too-casual tone for a B2B sales application, for example. A defined aesthetic goes a long way towards establishing a common company design language that smooths the path for identity, marketing, and development.  <p> Radius uses a very stark red motif with rounded elements echoing its logo, a compsition that represents connected regional broadcasts. Such branding is reflected in our released products and all communication.
+			</div>
+			<div id="radius_slide_branding_tabs">
+				<div id="logo" class="radius_slide_branding_option">Logo</div>
+				<div id="icons" class="radius_slide_branding_option">Icons</div>
+				<div id="businesscards" class="radius_slide_branding_option">Business Cards</div>
+				<div id="pitchdeck" class="radius_slide_branding_option">Pitchdeck</div>
+				<div id="software" class="radius_slide_branding_option">Software</div>
+			</div>
+			<div id="icons_content" class="radius_slide_branding_option_content"></div>
+			<div id="logo_content" class="radius_slide_branding_option_content"></div>
+			<div id="businesscards_content" class="radius_slide_branding_option_content"></div>
+			<div id="pitchdeck_content" class="radius_slide_branding_option_content"></div>
+			<div id="software_content" class="radius_slide_branding_option_content"></div>
+		</div>
+
+		<div id="drafting" class="radius_slide">
+			<div id="radius_slide_drafting_title">User interaction planning</div>
+			<div id="radius_slide_drafting_text">
+					The end user interface is a direct extension of the project's core concept: it is important that the base use case is low-energy and the first thing presented to end users. (For Radius, that is map-based discovery of nearby interests.) UI flow diagrams, such as the one below, are exceptionally useful in the planning phase as they give a solid product roadmap.
+			</div>
+			<img src="img/radius_userflow.png" id="radius_slide_drafting_diagram"/>
+			<div id="radius_slide_drafting_text">
+					I've found it's very useful to assemble a list of both desired behaviors (ex. sharing content to other networks) and undesired options (ex. deleting a public account) to best plot user trajectory. Design can then look through and adjust friction to taste (ex. allowing one click approval vs requiring a seperate confirmation alert).
+			</div>
+		</div>
+
+		<div id="wireframe" class="radius_slide">
+			<div id="radius_slide_production_left">
+				<div id="radius_slide_production_title">Wireframes and specs</div>
+				<div id="radius_slide_production_text">
+					Although our agile process relies on tandem design-development, it is often efficient to seperate the two (so developers don't spend time figuring how best something looks while implementing it). These higher-fidelity instruction sets were written to define the mobile and web products.
+					<p>
+					These documents (see right) were mainly done in powerpoint for ease of use and dispersed to the team for discussion and reference.
+				</div>
+			</div>
+			<div id="radius_slide_production_webbox">
+				<div id="radius_slide_production_wireframe1">
+					<div id="radius_slide_production_wireframe1_cover"></div>
+				</div>
+				<!-- <div id="radius_slide_production_wireframe2">
+					<div id="radius_slide_production_wireframe2_cover"></div>
+				</div>
+				<div id="radius_slide_production_wireframe3">
+					<div id="radius_slide_production_wireframe3_cover"></div>
+				</div> -->
+			</div>
+		</div>
+
+		<div id="execution" class="radius_slide">
+			<div id="radius_slide_execution_iphone">
+				<div id="iphone5_back"></div>
+				<div id="iphone5">
+					<div id="iphone5_homebutton"></div>
+					<div id="radius_mobile_splash" class="iphone5_screen"></div>
+					<div id="radius_mobile_discover" class="iphone5_screen"></div>
+					<div id="radius_mobile_beacon" class="iphone5_screen"></div>
+					<div id="radius_mobile_newsfeed" class="iphone5_screen"></div>
+					<div id="radius_mobile_me" class="iphone5_screen"></div>
+				</div>
+				<div id="iphone5_forward"></div>
+			</div>
+			<div id="radius_slide_execution_title">Pixel-perfect production</div>
+			<div id="radius_slide_execution_text">Once the wireframes are approved by the team, the next step is to build deployment-ready assets that can be inserted into the iOS storyboard or web code. This process can be made very painless if each element in the mockup is mathematically planned to be directly translatable to production.
+			<p> The goal here is to work with the developers to ensure the produced product, even with functionality compromises, looks as close to the intended vision as possible.
+			</div>
+			<div id="radius_slide_execution_bkgd">
+				<div id="radius_slide_execution_measurements"></div>
+			</div>
+		</div>
+		
+		<div id="production" class="radius_slide">
+			<div id="radius_slide_production_left">
+				<div id="radius_slide_production_title">Two products, one vision</div>
+				<div id="radius_slide_production_text">
+					Simultaneously releasing web and mobile was a tough problem: despite massively differing screen sizes, the two apps needed to have the same functionality / flow to not confuse users, AND still feel natural to their own platform.
+					<p>
+					My solution was to use a persistent sidebar in both apps while highlighting their natural strengths (content upload on web, local discover on mobile). The products thus had their own specialization but were still cut from the same mold. Having a defined theme and brand so that everything looked in-place was very helpful in this process.
+				</div>
+			</div>
+			<div id="radius_slide_production_webbox">
+				<div id="radius_slide_production_web1">
+					<div id="radius_slide_production_web1_cover"></div>
+				</div>
+				<!-- <div id="radius_slide_production_web2">
+					<div id="radius_slide_production_web2_cover"></div>
+				</div>
+				<div id="radius_slide_production_web3">
+					<div id="radius_slide_production_web3_cover"></div>
+				</div> -->
+			</div>
+			
+		</div>
+
+		<div id="drafting" class="radius_slide">
+			<div id="radius_slide_drafting_title">Feedback/analytics driven development loop</div>
+			<div id="radius_slide_drafting_text">
+					Once the product is shipped, it's time to test the hypotheses made regarding market fit and user experience. Are users latching onto the app? Is the base use case immediately clear and executed upon? Does the interface naturally guide people to take desired actions?
+			</div>
+			<img src="img/radius_metrics.png" id="radius_slide_drafting_diagram"/>
+			<div id="radius_slide_drafting_text">
+					We incorporated the Flurry analytics platform into our mobile application. We scrutinized metrics both broad (avg session length) and specific (dropoff rate between broadcast creation steps). This set of data combined with subjective feedback from our beta users served to guide our iterative development process. 
+			</div>
+		</div>
+
+		<div id="package" class="radius_slide">
+			<div id="radius_slide_package_title">Release and beyond</div>
+			<div id="radius_slide_package_text">Putting products out to the market is both a very stressful event and a breath of relief. However, design's work is never done, as brand extends into marketing and promotion. Check out this cool little element I created for the webapp, which lets people to text our website to recieve a mobile download link! (functional on <a href="http://radius-app.com" target="_blank">radius-app.com</a>)
+			</div>
+			<div id="footer_mobile_download">
+				<div id="footer_mobile_download_panel">
+					<div id="ico_iphone"></div>
+					<div id="footer_mobile_download_panel_content">
+						<div id="presubmit">
+							<div id="footer_mobile_download_panel_downloadtext">Check out Radius on iPhone! 
+								<br/>We'll text a download link to you.</div>
+							<input name="textnumber" maxlength="11" placeholder="##########" autocorrect="off" type="text" id="textnumberfield" />
+							<input type="hidden" value="{{ csrf_token }}" id="csrftoken">
+							<button id="btn_sendnumber">
+								Send
+							</button>
+						</div>
+						<div id="footer_mobile_download_panel_ituneslink">
+							<a href="http://www.radius-app.com/download/iphone" target="_blank"> <img src="img/iOS.png"/> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="radius_slide">
+			<div id="radius_slide_completion_title">A holistic view</div>
+			<div id="radius_slide_completion_text">I hope you enjoyed this design walkthrough of Radius.
+			<p>Please feel free to contact me with any questions or comments.
+			</div>
+		</div>
+	</div>
+
+	<!-- other design work -->
+	<div id="misc_wrapper" class="maintab_wrapper">
+
+		<div id="design_showcase_contentpanel">
+			<div id="design_showcase_pictureframe"></div>
+
+			<!-- template for descriptions -->
+			<!--
+			<div class="design_showcase_content %content_name%">
+				<div class="design_showcase_content_left">
+					<div  id="%content_name%_showcase" class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_cava1.png" rel="lightbox[%content_name%]"><img src="img/work_%content_name%1.png" width="300px"/></a>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">%content_title%</div>
+					<div class="design_showcase_content_right_text">
+						<p>%content_text%</p>
+					</div>
+				</div>
+			</div>
+			-->
+			<!-- end template -->
+
+			<div class="design_showcase_content radius">
+				<div class="design_showcase_content_left">
+					<div id="design_showcase_iphone">
+						<div id="design_iphone5_back"></div>
+						<div id="iphone5">
+							<div id="iphone5_homebutton"></div>
+							<div id="radius_mobile_discover1" class="iphone5_screen design_iphone5_screen"></div>
+							<div id="radius_mobile_discover2" class="iphone5_screen design_iphone5_screen"></div>
+							<div id="radius_mobile_discover3" class="iphone5_screen design_iphone5_screen"></div>
+						</div>
+						<div id="design_iphone5_forward"></div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div id="radius" class="design_showcase_content_right_title radius">Map Overlay Design</div>
+					<div id="radius" class="design_showcase_content_right_text">
+						<p>How does one put all location relevant information on a map without making it visually cluttered?</p>
+
+						<p>Maps are traditionally very information-dense and pictogram-centric. At Radius this was further compounded by the user-generated content we needed to overlay. We needed to both present broadcast names in a structured list for usability and pin their pictures to their source location.</p>
+
+						<p>Here were my UI design goals: </p>
+							<ul>
+							<li>(1) The actual map needed the most screen real estate.
+							<li>(2) The structured list needed to be accessible by default.
+							<li>(3) The broadcast profile pictures needed to be large enough to easily recognize but small enough to not spam the map.
+							<li>(4) A user should be able to identify a broadcast's name without tapping.
+							</ul>
+
+						<p>The solution I came up with is this: contain the broadcast names in a semi-transparent table that the user can drag up or down. The user can thus choose between full-screen discovery, full-screen list, or the default combo of both. Due to semi-transparency, the map can be full screen and never out of the user's attention. Broadcast profile pictures on the map itself can be smaller because the structured list draws upon picture association principles and users can easily match map pins with broadcast names.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content foster">
+				<div class="design_showcase_content_left">
+					<div class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_foster2.png" rel="lightbox[foster]"><img src="img/work_foster2.png" width="300px"/></a>
+					</div>
+					<div class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_foster1.png" rel="lightbox[foster]"><img src="img/work_foster1.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_foster3.png" rel="lightbox[foster]"><img src="img/work_foster3.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_foster4.png" rel="lightbox[foster]"><img src="img/work_foster4.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_foster5.png" rel="lightbox[foster]"><img src="img/work_foster5.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Foster WebApp Interface</div>
+					<div class="design_showcase_content_right_text">
+						<p>
+						Foster is a tech startup whose flagship product is a people-tracking / deal-offering service.</p>
+
+						<p>These are the drafted mockups for their B2B webapp, intended for local vendor use. Design parameters were to aim for a grunge, monochromatic tone, in accrodance with their released iOS app. The intended functionality was to present an easy-to-use interface to allow business partners to easily set deal parameters and track usage analytics.</p>
+
+						<p>All images are to be considered currently in development and taken as visual representation of my design work range, not official communication of Foster, L.L.C.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content cava">
+				<div class="design_showcase_content_left">
+					<div  id="cava_showcase" class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_cava1.png" rel="lightbox[cava]"><img src="img/work_cava1.png" width="300px"/></a>
+					</div>
+					<div id="cava_showcase" class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_cava2.png" rel="lightbox[cava]"><img src="img/work_cava2.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_cava3.png" rel="lightbox[cava]"><img src="img/work_cava3.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_cava4.png" rel="lightbox[cava]"><img src="img/work_cava4.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">CCG Branding</div>
+					<div class="design_showcase_content_right_text">
+						<p>
+						Cavalaro Consulting Group is a professional business strategy consultancy currently devoted towards independent contracts. This client desired a sophisticated design to project the qualification and potency of the recently-founded firm. Capital, unembellished Copperplate Light font was used to showcase solidarity and solid trustworthiness. </p>
+
+						<p>Sample design slides brought to the consideration of the client are also included. The proof backgrounds were custom made to supplement the look and feel of the logo.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content brave_gray">
+				<div class="design_showcase_content_left">
+					<div class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_brave_gray1.png" rel="lightbox[brave_gray]"><img src="img/work_brave_gray1.png" width="300px"/></a>
+					</div>
+					<div class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_gray2.png" rel="lightbox[brave_gray]"><img src="img/work_brave_gray2.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_gray3.png" rel="lightbox[brave_gray]"><img src="img/work_brave_gray3.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_gray4.png" rel="lightbox[brave_gray]"><img src="img/work_brave_gray4.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_gray5.png" rel="lightbox[brave_gray]"><img src="img/work_brave_gray5.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Brave Wilderness Master Pitchbook</div>
+					<div class="design_showcase_content_right_text">
+						<p>This production contract was for a video game surrounding a predator-based adventure/survival show, Brave Wilderness. Part 1 of the pitchbook outlined the intended goals and feels of the interactive adaptation to present to studio execs. This was an incredibly fun project to undertake.</p>
+					<p>A collaboration with artist Patrick Lemieux.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content brave_brown">
+				<div class="design_showcase_content_left">
+					<div id="brave_brown_showcase" class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_brave_brown1.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown1.png" width="300px"/></a>
+					</div>
+					<div id="brave_brown_showcase" class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown2.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown2.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown3.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown3.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown4.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown4.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown5.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown5.png"/></a>
+						</div>
+					</div>
+					<div class="design_showcase_content_left_gallery2">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown6.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown6.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown7.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown7.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown8.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown8.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_brown9.png" rel="lightbox[brave_brown]"><img src="img/work_brave_brown9.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Brave Wilderness Game Mechanics Guide</div>
+					<div class="design_showcase_content_right_text">
+						<p>Part two of the Brave Wilderness contract was a storyboard reel of the game's first episode. Each slide was represented a major element or scene within the game, which is to be released as part of a companion website to the show.</p>
+						<p>A collaboration with artist Patrick Lemieux.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content brave_blue">
+				<div class="design_showcase_content_left">
+					<div class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_brave_blue1.png" rel="lightbox[brave_blue]"><img src="img/work_brave_blue1.png" width="300px"/></a>
+					</div>
+					<div id="brave_blue" class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_blue2.png" rel="lightbox[brave_blue]"><img src="img/work_brave_blue2.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_blue3.png" rel="lightbox[brave_blue]"><img src="img/work_brave_blue3.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_brave_blue4.png" rel="lightbox[brave_blue]"><img src="img/work_brave_blue4.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Brave Wilderness Episode Guide</div>
+					<div class="design_showcase_content_right_text">
+						<p>The last of the design contract was to repackage all existing planning literature under a cohesive style for inter-company use.</p>
+						<p>A collaboration with artist Patrick Lemieux.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content duke">
+				<div class="design_showcase_content_left">
+					<div id="duke_showcase" class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_duke1.png" rel="lightbox[duke]"><img src="img/work_duke1.png" width="300px"/></a>
+					</div>
+					<div id="duke_showcase" class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_duke2.png" rel="lightbox[duke]"><img src="img/work_duke2.png"/></a>
+						</div>
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_duke3.png" rel="lightbox[duke]"><img src="img/work_duke3.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Gothic Labyrinth</div>
+					<div class="design_showcase_content_right_text">
+						<p>These images are part of a series on architectual patterning and my personal favorite works.</p>
+
+						<p>They reflect three central points of Duke University Campus: the famed Duke Chapel, the stoic Baldwin Auditorium, and the storied Cameron Indoor Stadium.</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content bulldurham">
+				<div class="design_showcase_content_left">
+					<div class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_bulldurham.png" rel="lightbox"><img src="img/work_bulldurham.png" width="300px"/></a>
+					</div>
+					<div class="design_showcase_content_left_gallery">
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">BDSDL Branding</div>
+					<div class="design_showcase_content_right_text">
+						<p>Bull Durham Speech and Debate League is a youth organization dedicated to cultivating the speaking prowess of the youngest generation through state-wide practices and competitions. The director of this non-profit approached me to draft a logo that incorporated elements of the Durham skyline, the National Forensics League’s emblem, and the Durham municipality flag.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content chipsi">
+				<div class="design_showcase_content_left">
+					<div id="chipsi_showcase" class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_chipsi.png" rel="lightbox"><img src="img/work_chipsi.png" height="400px"/></a>
+					</div>
+					<div class="design_showcase_content_left_gallery">
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Chi Psi Formal Invitations</div>
+					<div class="design_showcase_content_right_text">
+						<p>I was asked to make elegant invitation cards for an annual formal-attire Founder’s Day Banquet. I was given unlimited creative freedom to compose something that would delivers all of the relevant information and still be excellent keepsakes for esteemed guests. I used a style reminiscent of top-notch banded cigar boxes to hint at vintage high production value. The rounded corners were meant to be die-cut to achieve optimal effect. Each card front was customized with the invitee’s name.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content peking">
+				<div class="design_showcase_content_left">
+					<div id="peking_showcase" class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_peking1.png" rel="lightbox[peking]"><img src="img/work_peking1.png" height="400px"/></a>
+					</div>
+					<div id="peking_showcase" class="design_showcase_content_left_gallery">
+						<div class="design_showcase_content_left_gallery_entry">
+							<a href="img/full/work_peking2.png" rel="lightbox[peking]"><img src="img/work_peking2.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Updated Menu</div>
+					<div class="design_showcase_content_right_text">
+						<p>Peking Chef is an established middle-class Chinese restaurant that serves great traditional American food to a growing suburban community. With their store’s physical expansion, they wished for a redesign of their outdated menu. The new dining menu needed to preserve all of the information of the prior with an eye towards a new beginning. I splashed bright reds to match the decorum of the actual restaurant and stamped the name of the restaurant in Chinese to bring the logo together.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="design_showcase_content sunflower">
+				<div class="design_showcase_content_left">
+					<div class="design_showcase_content_left_mainpic">
+						<a href="img/full/work_sunflower.png" rel="lightbox"><img src="img/work_sunflower.png" width="300px"/></a>
+					</div>
+					<div class="design_showcase_content_left_gallery">
+					</div>
+				</div>
+				<div class="design_showcase_content_right">
+					<div class="design_showcase_content_right_title">Sunflower</div>
+					<div class="design_showcase_content_right_text">
+						<p>This piece features Calibri and is part of a digital series celebrating my preferred typefaces.</p>
+					</div>
+				</div>
+			</div>
+		
+
+			<div class="design_showcase_content_close"></div>
+		</div>
+		
+
+		<div id="misc_wrapper_masonry_container">
+
+			<!-- template for design work tiles -->
+			<!--
+			<div id="%content_name%" class="design_showcase %content_name%">
+				<img src="img/work_%content_name%1.png"/>
+				<div class="design_descriptionpanel %content_name%">
+					<div class="design_title">%content_title%</div>
+					<div class="design_client">Client: %content_client%</div>
+					<div class="design_worktype">%content_worktype%</div>
+				</div>
+			</div>
+			-->
+			<!-- end template -->
+
+			<div id="radius" class="design_showcase radius">
+				<img src="img/work_radius1.png"/>
+				<div class="design_descriptionpanel radius">
+					<div class="design_title">Map Overlay Design</div>
+					<div class="design_client">Client: Radius</div>
+					<div class="design_worktype">User Interaction Design</div>
+				</div>
+			</div>
+
+			<div id="foster" class="design_showcase foster">
+				<img src="img/work_foster2.png"/>
+				<div class="design_descriptionpanel foster">
+					<div class="design_title">Foster WebApp Interface</div>
+					<div class="design_client">Client: Foster, L.L.C.</div>
+					<div class="design_worktype">Interface Mockup</div>
+				</div>
+			</div>
+
+			<div id="cava" class="design_showcase cava">
+				<img src="img/work_cava1.png"/>
+				<div class="design_descriptionpanel cava">
+					<div class="design_title">CCG Branding</div>
+					<div class="design_client">Client: Cavalaro Consulting Group</div>
+					<div class="design_worktype">Corporate Branding</div>
+				</div>
+			</div>
+
+			<div id="brave_gray" class="design_showcase brave_gray">
+				<img src="img/work_brave_gray1.png"/>
+				<div class="design_descriptionpanel brave_gray">
+					<div class="design_title">Brave Wilderness Pitchbook</div>
+					<div class="design_client">Client: LostDraft Productions</div>
+					<div class="design_worktype">Presentation Design</div>
+				</div>
+			</div>
+
+			<div id="brave_brown" class="design_showcase brave_brown">
+				<img src="img/work_brave_brown1.png"/>
+				<div class="design_descriptionpanel brave_brown">
+					<div class="design_title">Brave Wilderness Game Design</div>
+					<div class="design_client">Client: LostDraft Productions</div>
+					<div class="design_worktype">Storyboarding</div>
+				</div>
+			</div>
+
+			<div id="brave_blue" class="design_showcase brave_blue">
+				<img src="img/work_brave_blue1.png"/>
+				<div class="design_descriptionpanel brave_blue">
+					<div class="design_title">Brave Wilderness Episode Guide</div>
+					<div class="design_client">Client: LostDraft Productions</div>
+					<div class="design_worktype">Presentation Design</div>
+				</div>
+			</div>
+
+			<div id="duke" class="design_showcase duke">
+				<img src="img/work_duke1.png"/>
+				<div class="design_descriptionpanel duke">
+					<div class="design_title">Gothic Labyrinth</div>
+					<div class="design_client">Client: Duke University</div>
+					<div class="design_worktype">Fine Art</div>
+				</div>
+			</div>
+
+			<div id="peking" class="design_showcase peking">
+				<img src="img/work_peking2.png"/>
+				<div class="design_descriptionpanel peking">
+					<div class="design_title">Updated Menu</div>
+					<div class="design_client">Client: Peking Chef Restaurant</div>
+					<div class="design_worktype">Print Design</div>
+				</div>
+			</div>
+
+			<div id="chipsi" class="design_showcase chipsi">
+				<img src="img/work_chipsi.png"/>
+				<div class="design_descriptionpanel chipsi">
+					<div class="design_title">Chi Psi Formal Invitations</div>
+					<div class="design_client">Client: Chi Psi Fraternity</div>
+					<div class="design_worktype">Print Design</div>
+				</div>
+			</div>
+
+			<div id="bulldurham" class="design_showcase bulldurham">
+				<img src="img/work_bulldurham.png"/>
+				<div class="design_descriptionpanel bulldurham">
+					<div class="design_title">BDSDL Logo</div>
+					<div class="design_client">Client: Durham Speech and Debate League</div>
+					<div class="design_worktype">Organization Branding</div>
+				</div>
+			</div>
+
+			<div id="sunflower" class="design_showcase sunflower">
+				<img src="img/work_sunflower.png"/>
+				<div class="design_descriptionpanel sunflower">
+					<div class="design_title">Sunflower</div>
+					<div class="design_client">Client: Personal</div>
+					<div class="design_worktype">Fine Art</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- contact -->
+	<div id="contact_wrapper" class="maintab_wrapper"> 
+		
+		<div id="contact_infobox">
+			<div id="contact_info">
+				Tian Jason Tian
+				<p> Berkeley, CA
+				<p>tianmansquared@gmail.com
+				<p>(410) 336 0146
+				<p>
+				<a target="_blank" href="Jason_Tian_Resume.pdf">
+					<button id="btn_about_viewresume">View My Resume</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- home | currently unused -->
+	<div id="home_wrapper" class="maintab_wrapper">
+	</div>
+
+</div> <!-- closes inner_wrapper -->
+</div> <!-- closes outer_wrapper -->
+
+
+</body>
+
+</html>

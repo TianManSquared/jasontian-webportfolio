@@ -1,0 +1,1303 @@
+/**********************************************/
+/* CSS Organization
+/*/ 
+/* Page Setup
+/* Page Header & Navigation
+/*
+/**********************************************/
+
+
+
+
+/**********************************************/
+/*/
+/*/
+/*/ Page Setup
+/*/
+/*/
+/**********************************************/
+
+body{
+	background:white url(./img/bkgdtex_fabric_squares.png) repeat top left;
+	font-family: 'MavenProRegular', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+@font-face {
+    font-family: 'MavenProRegular';
+    src: url('font/maven_pro_regular-webfont.eot');
+    src: url('font/maven_pro_regular-webfont.eot?#iefix') format('eot'),
+         url('font/maven_pro_regular-webfont.woff') format('woff'),
+         url('font/maven_pro_regular-webfont.ttf') format('truetype'),
+         url('font/maven_pro_regular-webfont.svg#webfontOM8fITNz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button{
+	border-width: 3px;
+	border-color: white;
+	border-style: outset;
+	font-family: 'maven pro', sans-serif;
+	color: white;
+	font-size: 14;
+	text-align: center;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+	button:hover{
+		cursor: pointer;
+	}
+
+	button:active{
+		border-style: inset;
+	}
+
+li {
+	list-style: none;
+}
+
+a{
+	text-decoration:none;
+	color: #191D9C;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;   
+    background: #909090;
+    opacity: 0.8;   
+}
+
+#outer_wrapper{
+}
+
+#inner_wrapper{
+	position: relative;
+}
+
+/**********************************************/
+/*/
+/*/
+/*/ Page Header & Navigation
+/*/
+/*/
+/**********************************************/
+
+#header_wrapper{
+	position: relative;
+	height: 100px;
+	overflow: hidden;
+}
+
+#header_bar{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	color:white;
+	box-shadow: 0px 1px 6px #666, inset 0px 2px 3px #000;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#272727), to(#131313));
+	background-image: -webkit-linear-gradient(top, #272727, #131313); 
+	background-image: -moz-linear-gradient(top, #171717, #070707); 
+	background-image: -ms-linear-gradient(top, #171717, #070707); 
+	background-image: -o-linear-gradient(top, #171717, #070707); 
+}
+
+#header_name{
+	position: absolute;
+	cursor: pointer;
+}
+
+#header_name:hover{
+	background-color: #700000;
+}
+
+#header_icon{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: url(img/icon_tian_white.png);
+}
+
+#header_title{
+	float: left;
+	width: 180px;
+	padding: 14px 10px 14px 0px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#header_tabs{
+	position: absolute;
+	z-index: 2;
+	top: 5px;
+	right: 10px;
+	margin: auto;
+	width: 380px;
+	height: 40px;
+	overflow: hidden;
+}
+
+.option{
+	float: left;
+	margin-right: 5px;
+	width: 90px;
+	padding: 12px 0px 12px 0px;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	-o-transition:.4s;
+  	-ms-transition:.4s;
+  	-moz-transition:.4s;
+  	-webkit-transition:.4s;
+  	cursor: pointer;
+}
+
+	.option:hover{
+		background-color: #444444;
+	}
+
+.option#home{
+	display: none;
+	/*visibility: hidden;*/
+}
+
+.option#about{
+	/*display: none;*/
+	/*visibility: hidden;*/
+}
+
+.option#misc{
+	display: none;
+	/*visibility: hidden;*/
+}
+
+.option#design{
+	/*display: none;*/
+	/*visibility: hidden;*/
+}
+
+.option#radius{
+	/*display: none;*/
+	/*visibility: hidden;*/
+}
+
+.option#contact{
+	/*display: none;*/
+	/*visibility: hidden;*/
+}
+
+.option#newportfolio{
+	display: none;
+	/*visibility: hidden;*/
+}
+
+/**********************************************/
+/*/
+/*/
+/*/ Tabbed Content
+/*/
+/*/
+/**********************************************/
+
+#home_wrapper{
+	display: none;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#about_wrapper{
+	display: none;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#misc_wrapper{
+	display: none;
+	margin-top: 20px;
+	overflow: auto;
+}
+
+#design_wrapper{
+	display: none;
+	margin-top: 20px;
+	overflow: auto;
+}
+
+#radius_wrapper{
+	/*display: none;*/
+	/*margin-top: 20px;*/
+	overflow: auto;
+}
+
+#contact_wrapper{
+	display: none;
+	margin-top: 20px;
+	overflow:hidden;
+}
+
+/**********************************************/
+/*/
+/*/
+/*/ New Stuff
+/*/
+/*/
+/**********************************************/
+
+
+/**********************************************/
+/*/
+/*/
+/*/ About Me
+/*/
+/*/
+/**********************************************/
+
+#about_wrapper{
+	width: 85%;
+	margin:auto;
+	-o-transition: .4s;
+	-ms-transition: .4s;
+	-moz-transition: .4s;
+	-webkit-transition: .4s;
+}
+
+	/**********************************************/
+	/*/
+	/*/ /*About | Skills | Software Emblems
+	/*/
+	/**********************************************/
+
+#about_skills_softwarename{
+	margin: auto;
+	width: 300px;
+	padding: 10px;
+	height: 16px;
+	font-size: 14px;
+	background-color: #DDDDDD;
+	color: black;
+	text-align: center;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+}
+
+#about_skills_container{
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.about_overview_skills_softwarebkgd{
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+	width: 60px;
+	height: 75px;
+	background-color: #BBBBBB;
+	border-radius: 5px;
+	-o-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+}
+
+	.about_overview_skills_softwarebkgd:hover{
+		background-color: #CCCCCC;
+	}
+
+.about_overview_skills_softwareicon{
+	float: left;
+	width: 60px;
+	height: 75px;
+}
+
+.about_overview_skills_softwareicon#photoshop{
+	background: url(img/icon_photoshop.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#photoshop:hover{
+		background: url(img/icon_photoshop.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#illustrator{
+	background: url(img/icon_illustrator.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#illustrator:hover{
+		background: url(img/icon_illustrator.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#inDesign{
+	background: url(img/icon_inDesign.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#inDesign:hover{
+		background: url(img/icon_inDesign.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#afterEffects{
+	background: url(img/icon_afterEffects.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#afterEffects:hover{
+		background: url(img/icon_afterEffects.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#acrobat{
+	background: url(img/icon_acrobat.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#acrobat:hover{
+		background: url(img/icon_acrobat.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#processing{
+	background: url(img/icon_processing.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#processing:hover{
+		background: url(img/icon_processing.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#maya{
+	background: url(img/icon_maya.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#maya:hover{
+		background: url(img/icon_maya.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#zbrush{
+	background: url(img/icon_zbrush.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#zbrush:hover{
+		background: url(img/icon_zbrush.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#solidworks{
+	background: url(img/icon_solidworks.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#solidworks:hover{
+		background: url(img/icon_solidworks.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#html{
+	background: url(img/icon_html5.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#html:hover{
+		background: url(img/icon_html5.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#css{
+	background: url(img/icon_css3.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#css:hover{
+		background: url(img/icon_css3.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#javaScript{
+	background: url(img/icon_javaScript.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#javaScript:hover{
+		background: url(img/icon_javaScript.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#coffeeScript{
+	background: url(img/icon_coffeeScript.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#coffeeScript:hover{
+		background: url(img/icon_coffeeScript.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#jQuery{
+	background: url(img/icon_jQuery.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#jQuery:hover{
+		background: url(img/icon_jQuery.png) no-repeat bottom;
+	}
+
+.about_overview_skills_softwareicon#backbone{
+	background: url(img/icon_backbone.png) no-repeat top;
+}
+
+	.about_overview_skills_softwareicon#backbone:hover{
+		background: url(img/icon_backbone.png) no-repeat bottom;
+	}
+
+/**********************************************/
+/*/
+/*/
+/*/ Design Work
+/*/
+/*/
+/**********************************************/
+
+#design_background{
+	position: absolute;
+	z-index: 1;
+	top: 300px;
+	left: 0px;
+	right: 0px;
+	height: 300px;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+}
+
+#design_background:hover{
+	background-color: red;
+}
+
+#design_block_container{
+	position: absolute;
+	z-index: 2;
+}
+
+#design_wrapper{
+	width: 75%;
+	margin: auto;
+}
+
+.design_block{
+	position: relative;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: 300px;
+	height: 210px;
+	color: white;
+	background-color: #222222;
+	cursor: pointer;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	box-shadow: 0px 1px 6px #000, inset 0px 2px 3px #000;
+}
+
+.design_block:hover{
+	background-color: #444444;
+}
+
+.design_descriptionpanel{
+	position: absolute;
+	bottom: 0px;
+	display: none;
+	padding-left: 40px;
+	width: 260px;
+	height: 100px;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+}
+
+	/**********************************************/
+	/*/ iPhone5
+	/**********************************************/
+
+#iphone5{
+	float: left;
+	margin-top: 50px;
+	width: 300px;
+	height: 600px;
+	background: url(img/iphone5.png);
+}
+
+#iphone5_homebutton{
+	position: absolute;
+	margin-top: 525px;
+	margin-left: 120px;
+	width: 60px;
+	height: 60px;
+	background: url(img/homebutton.png);
+	cursor: pointer;
+}
+
+/**********************************************/
+/*/
+/*/
+/*/ Contact
+/*/
+/*/
+/**********************************************/
+
+#contact_wrapper{
+	width: 300px;
+	margin: auto;
+}
+
+#contact_list{
+	margin: auto;
+}
+
+.contact_option{
+	display: block;
+	width: 300px;
+	height: 50px;
+	margin-bottom: 5px;
+	color: white;
+	background-color: #444444;
+	cursor: pointer;
+}
+
+.contact_option:hover{
+	background-color: #222222;
+}
+
+.contact_option_image{
+	float: left;
+	margin-left: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+.contact_option_text{
+	float: left;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+/**********************************************/
+/*/
+/*/
+/*/ Radius Portfolio Content
+/*/
+/*/
+/**********************************************/
+
+#radius_wrapper{
+	margin: auto;
+	max-width: 1066px;
+}
+
+.radius_slide{
+	background-color: #DDDDDD;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	width: 90%;
+	max-width: 960px;
+	border-radius: 5px;
+}
+
+
+	/**********************************************/
+	/*/
+	/* Overview
+	/*/
+	/**********************************************/
+
+.radius_slide#overview{
+	padding-top: 0px;
+	height: 400px;
+	background: url(img/bkgdtex_fabric_squares.png);
+}
+
+#radius_banner{
+	width: 100%;
+	max-width: 960px;
+}
+
+#radius_slide_overview_title{
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	max-width: 960px;
+}
+
+#radius_slide_overview_text{
+	margin: auto;
+	margin-top: 40px;
+	width: 90%;
+	max-width: 870px;
+}
+
+	/**********************************************/
+	/*/
+	/* Branding
+	/*/
+	/**********************************************/
+
+.radius_slide#branding{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+#radius_slide_branding_title{
+	margin: auto;
+	font-size: 24px;
+	width: 90%;
+	max-width: 920px;
+}
+
+#radius_slide_branding_text{
+	margin:auto;
+	margin-top: 30px;
+	width: 90%;
+	max-width: 870px;
+}
+
+#radius_slide_branding_tabs{
+	margin-top: 30px;
+	margin: auto;
+	width: 100%;
+	max-width: 900px;
+	height: 40px;
+}
+
+.radius_slide_branding_option{
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 5px;
+	width: 13%;
+	max-width: 150px;
+	height: 15px;
+	padding: 10px;
+	font-size: 12px;
+	color: black;
+	background-color: #D1D1D1;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+	.radius_slide_branding_option:hover{
+		background-color: #CCCCCC;
+	}
+
+.radius_slide_branding_option_content{
+	margin-top: 20px;
+	padding-left: 10%;
+	width: 80%;
+	max-width: 800px;
+}
+
+#logo_content{
+	display: none;
+}
+
+#icons_content{
+	/*display: none;*/
+}
+
+#businesscards_content{
+	display: none;
+}
+
+#pitchdeck_content{
+	display: none;
+}
+
+#software_content{
+	display: none;
+}
+
+	/**********************************************/
+	/*/
+	/* User Flow Diagrams
+	/*/
+	/**********************************************/
+
+.radius_slide#drafting{
+}
+
+#radius_slide_drafting_title{
+	margin: auto;
+	font-size: 24px;
+	width: 90%;
+	max-width: 920px;
+}
+
+#radius_slide_drafting_text{
+	margin:auto;
+	margin-top: 30px;
+	width: 90%;
+	max-width: 870px;
+}
+
+#radius_slide_drafting_diagram{
+	margin-top: 10px;
+	width: 100%;
+	max-width: 960px;
+}
+
+	/**********************************************/
+	/*/
+	/* Wireframe & Specifications
+	/*/
+	/**********************************************/
+
+.radius_slide#wireframe{
+}
+
+#radius_slide_production_wireframe1{
+	float: left;
+	margin-left: 60px;
+	margin-top: 60px;
+	width: 400px;
+	height: 300px;
+	background-color: black;
+	border-radius: 5px 5px 5px 5px;
+	overflow: hidden;
+}
+
+#radius_slide_production_wireframe1_cover{
+	margin-top: 20px;
+	width: 100%;
+	max-width: 400px;
+}
+
+#radius_slide_production_wireframe2{
+	float: left;
+	margin-top: 60px;
+	width: 40px;
+	height: 300px;
+	background-color: black;
+}
+
+#radius_slide_production_wireframe2_cover{
+	width: 40px;
+	height: 300px;
+	background:url(img/radius_wireframe2.png);
+	-o-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-webkit-transition: opacity .4s;
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+	#radius_slide_production_wireframe2_cover:hover{
+		opacity: 0.4;
+	}
+
+#radius_slide_production_wireframe3{
+	float: left;
+	margin-top: 60px;
+	width: 40px;
+	height: 300px;
+	background-color: black;
+	border-radius: 0px 5px 5px 0px;
+	overflow: hidden;
+}
+
+#radius_slide_production_wireframe3_cover{
+	width: 40px;
+	height: 300px;
+	background:url(img/radius_wireframe3.png);
+	-o-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-webkit-transition: opacity .4s;
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+	#radius_slide_production_wireframe3_cover:hover{
+		opacity: 0.4;
+	}
+
+
+	/**********************************************/
+	/*/
+	/* Execution
+	/*/
+	/**********************************************/
+
+.radius_slide#execution{
+}
+
+#radius_slide_execution_iphone{
+	float: left;
+	margin-left: 20px;
+	width: 380px;
+	height: 700px;
+}
+
+#radius_slide_execution_title{
+	float: left;
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+#radius_slide_execution_text{
+	float: left;
+	margin-top: 40px;
+	width: 90%;
+	max-width: 450px;
+}
+
+#radius_slide_execution_bkgd{
+	float: left;
+	margin-top: 20px;
+	margin-left: 40px;
+	width: 400px;
+	height: 300px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 5px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+
+#radius_slide_execution_bkgd:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+#radius_slide_execution_measurements{
+	width: 400px;
+	height: 300px;
+	background:url(img/radius_measurements.png);
+}
+
+	/**********************************************/
+	/*/ iPhone5
+	/**********************************************/
+
+#iphone5{
+	float: left;
+	margin-top: 50px;
+	width: 300px;
+	height: 600px;
+	background: url(img/iphone5.png);
+}
+
+#iphone5_homebutton{
+	position: absolute;
+	margin-top: 525px;
+	margin-left: 120px;
+	width: 60px;
+	height: 60px;
+	background: url(img/homebutton.png);
+	cursor: pointer;
+}
+
+#design_iphone5_back{
+	float: left;
+	margin-top: 420px;
+	width: 30px;
+	height: 30px;
+	background: url(img/btn_navarrowleft.png) no-repeat bottom;
+	cursor: pointer;
+}
+
+#design_iphone5_back:hover{
+	background: url(img/btn_navarrowleft.png) no-repeat top;
+}
+
+#design_iphone5_forward{
+	float: left;
+	margin-top: 420px;
+	width: 30px;
+	height: 30px;
+	background: url(img/btn_navarrowright.png) no-repeat bottom;
+	cursor: pointer;
+}
+
+	#design_iphone5_forward:hover{
+		background: url(img/btn_navarrowright.png) no-repeat top;
+	}
+
+#iphone5_back{
+	float: left;
+	margin-top: 420px;
+	width: 30px;
+	height: 30px;
+	background: url(img/btn_navarrowleft.png) no-repeat bottom;
+	cursor: pointer;
+}
+
+	#iphone5_back:hover{
+		background: url(img/btn_navarrowleft.png) no-repeat top;
+	}
+
+#iphone5_forward{
+	float: left;
+	margin-top: 420px;
+	width: 30px;
+	height: 30px;
+	background: url(img/btn_navarrowright.png) no-repeat bottom;
+	cursor: pointer;
+}
+
+	#iphone5_forward:hover{
+		background: url(img/btn_navarrowright.png) no-repeat top;
+	}
+
+.iphone5_screen{
+	width: 300px;
+	height: 600px;
+	cursor:pointer;
+}
+
+#radius_mobile_splash{
+	background: url(img/radius_mobile_splash.png);
+}
+
+#radius_mobile_discover{
+	display: none;
+	background: url(img/radius_mobile_discover.png);
+}
+
+#radius_mobile_discover1{
+	background: url(img/radius_mobile_discover1.png);
+}
+
+#radius_mobile_discover2{
+	display: none;
+	background: url(img/radius_mobile_discover2.png);
+}
+
+#radius_mobile_discover3{
+	display: none;
+	background: url(img/radius_mobile_discover3.png);
+}
+
+#radius_mobile_beacon{
+	display: none;
+	background: url(img/radius_mobile_beacon.png);
+}
+
+#radius_mobile_newsfeed{
+	display: none;
+	background: url(img/radius_mobile_newsfeed.png);
+}
+
+#radius_mobile_me{
+	display: none;
+	background: url(img/radius_mobile_me.png);
+}
+
+	/**********************************************/
+	/*/
+	/* Production
+	/*/
+	/**********************************************/
+
+.radius_slide#production{
+}
+
+#radius_slide_production_left{
+	width: 350px;
+}
+
+#radius_slide_production_title{
+	margin: auto;
+	font-size: 24px;
+	width: 90%;
+	max-width: 350px;
+}
+
+#radius_slide_production_text{
+	margin:auto;
+	margin-top: 30px;
+	width: 90%;
+	max-width: 325px;
+}
+
+#radius_slide_production_web1{
+	float: left;
+	margin-left: 60px;
+	margin-top: 60px;
+	width: 400px;
+	height: 300px;
+	background-color: black;
+	border-radius: 5px 5px 5px 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 0px;
+	overflow: hidden;
+	/*cursor: pointer;*/
+}
+
+#radius_slide_production_web1_cover{
+	width: 400px;
+	height: 300px;
+	background:url(img/radius_web1.png);
+}
+
+/*#radius_slide_production_web1_cover:hover{
+	opacity: 0.4;
+}*/
+
+#radius_slide_production_web2{
+	float: left;
+	margin-top: 60px;
+	width: 40px;
+	height: 300px;
+	background-color: black;
+}
+
+#radius_slide_production_web2_cover{
+	width: 40px;
+	height: 300px;
+	background:url(img/radius_web3.png);
+	-o-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-webkit-transition: opacity .4s;
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+	#radius_slide_production_web2_cover:hover{
+		opacity: 0.4;
+	}
+
+#radius_slide_production_web3{
+	float: left;
+	margin-top: 60px;
+	width: 40px;
+	height: 300px;
+	background-color: black;
+	border-radius: 0px 5px 5px 0px;
+	overflow: hidden;
+}
+
+#radius_slide_production_web3_cover{
+	width: 40px;
+	height: 300px;
+	background:url(img/radius_web2.png);
+	-o-transition: opacity .4s;
+	-ms-transition: opacity .4s;
+	-moz-transition: opacity .4s;
+	-webkit-transition: opacity .4s;
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+	#radius_slide_production_web3_cover:hover{
+		opacity: 0.4;
+	}
+
+
+	/**********************************************/
+	/*/
+	/* Release and Beyond
+	/*/
+	/**********************************************/
+
+.radius_slide#package{
+}
+
+#radius_slide_package_title{
+	margin:auto;
+	font-size: 24px;
+	width: 90%;
+	max-width: 870px;
+}
+
+#radius_slide_package_text{
+	margin:auto;
+	margin-top: 30px;
+	width: 90%;
+	max-width: 870px;
+}
+
+		/* --------------------------------------- */
+		/* Footer Mobile Download				   */
+		/* --------------------------------------- */
+
+		#footer_mobile_download{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+
+		#footer_mobile_download_panel{
+			width: 50px;
+			height: 70px;
+			background-color: #590900;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		#footer_mobile_download_panel:hover{
+			cursor: pointer;
+			background-color: #700000;
+		}
+
+		#ico_iphone{
+			float: left;
+			margin-top: 5px;
+			margin-left: 5px;
+			width: 40px;
+			height: 60px;
+			background: url(img/mini_iphone.png);
+		}
+
+		#footer_mobile_download_panel_content{
+			display: none;
+			float: left;
+			margin-left: 5px;
+			margin-top: 5px;
+			width: 290px;
+			height: 210px;
+			color: white;
+			background-color: #590900;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		#textnumberfield{
+			    border-width: 1px;
+				border-style: solid;
+				border-color: #999999;
+				font-family: Quicksand, sans-serif;
+				font-size: 17px;
+				text-align: center;
+				color: #333333;
+				width: 160px;
+				height: 40px;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				margin-top: 10px;
+				margin-left: 15px;
+				margin-bottom: 10px;
+		    }
+
+		#footer_mobile_download_panel_downloadtext{
+			float: left;
+			width: 290px;
+			margin-top: 10px;
+			margin-left: 5px;
+			padding-top: 5px;
+			line-height: 110%;
+			text-align: center;
+		}
+
+		#btn_sendnumber{
+			float: right;
+			font-size: 14px;
+			width: 65px;
+			height: 42px;
+			background-color: black;
+			margin-top: 10px;
+			margin-right: 25px;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+
+			#btn_sendnumber:hover{
+				background-color: #333333;
+			}
+
+		#errorbox{
+			float: left;
+			margin-top: 5px;
+			margin-bottom:10px;
+			width: 290px;
+			height: 14px;
+		}
+
+		#numbererror{
+			display: none;
+			float: left;
+			width: 290px;
+			padding-top: 2px;
+			font-size: 12px;
+		}
+
+		#footer_mobile_download_panel_ituneslink{
+			float: left;
+			margin-left: 70px;
+			margin-right: 70px;
+			width: 150px;
+			height: 50px;
+			cursor: pointer;
+		}
+
+/**********************************************/
+/*/
+/* Completion & Contact
+/*/
+/**********************************************/
+
+.radius_slide#contact{
+	margin-bottom: 40px;
+}
+
+#radius_slide_completion_title{
+	margin:auto;
+	font-size: 24px;
+	width: 90%;
+	max-width: 870px;
+}
+
+#radius_slide_completion_text{
+	margin:auto;
+	margin-top: 30px;
+	width: 90%;
+	max-width: 870px;
+}
+
+/**********************************************/
+/*/
+/*/
+/*/ Media Queries, etc...
+/*/
+/*/
+/**********************************************/
+
+@media screen and (max-width:600px){
+	#header_wrapper{
+		height: 150px;
+	}
+	#header_name{
+		left: 50%;
+		margin-left: -115px;
+	}
+	#header_tabs{
+		top: 55px;
+		margin-left: -190px;
+		left: 50%;
+	}
+	.option{
+		background-color: #444444;
+		color: white;
+		border-radius: 0px 0px 0px 0px;
+	}
+	.option:hover{
+		background-color: #999999;
+	}
+}
+
+@media screen and (max-width: 960px){
+}
